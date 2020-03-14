@@ -25,13 +25,13 @@ public class MaximumProblemUsingGenerics {
         return maxNumber;
     }
     // Give 3 integer number and find maximum number
-    public String maximumString(String firstNumber,String secondNumber,String thardNumber){
-        String maxNumber = firstNumber;
-        if(secondNumber.compareTo(maxNumber)>0){
-            maxNumber = secondNumber;
+    public String maximumString(String firstString,String secondString,String thardString){
+        String maxNumber = firstString;
+        if(secondString.compareTo(maxNumber)>0){
+            maxNumber = secondString;
         }
-        if(thardNumber.compareTo(maxNumber)>0){
-            maxNumber = thardNumber;
+        if(thardString.compareTo(maxNumber)>0){
+            maxNumber = thardString;
         }
         return maxNumber;
     }
