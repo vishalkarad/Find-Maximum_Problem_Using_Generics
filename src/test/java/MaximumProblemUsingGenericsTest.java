@@ -34,4 +34,9 @@ public class MaximumProblemUsingGenericsTest {
         Float max=maxnumber.maxFloatNumber(30.50f,10.10f,20.20f);
         Assert.assertEquals((Float)30.50f,max);
     }
+    @Test
+    public void givenThreeString_WhenFirstMax_ThenTrue() {
+        String max=maxnumber.maximumString("abc","pqr","xyz");
+        Assert.assertEquals("xyz",max);
+    }
 }
