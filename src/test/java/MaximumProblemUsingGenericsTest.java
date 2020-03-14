@@ -49,4 +49,9 @@ public class MaximumProblemUsingGenericsTest {
         String max=maxnumber.maximumString("xyz","abc","pqr");
         Assert.assertEquals("xyz",max);
     }
+    @Test
+    public void givenThreeStringInCapitalLetter_WhenThardMax_ThenTrue() {
+        String max=maxnumber.maximumString("ABC","PQR","XYZ");
+        Assert.assertEquals("XYZ",max);
+    }
 }
