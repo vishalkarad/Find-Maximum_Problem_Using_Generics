@@ -24,4 +24,9 @@ public class MaximumProblemUsingGenericsTest {
         Float max=maxnumber.maxFloatNumber(10.10f,20.20f,30.50f);
         Assert.assertEquals((Float)30.50f,max);
     }
+    @Test
+    public void givenThreeFloatNumber_WhenSecondMax_ThenTrue() {
+        Float max=maxnumber.maxFloatNumber(10.10f,30.50f,20.20f);
+        Assert.assertEquals((Float)30.50f,max);
+    }
 }
