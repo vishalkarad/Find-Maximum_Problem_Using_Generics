@@ -14,5 +14,9 @@ public class MaximumProblemUsingGenericsTest {
         int max=maxnumber.maxnumber(10,30,20);
         Assert.assertEquals(30,max);
     }
-
+    @Test
+    public void givenThreeNumber_WhenFirstMaximum_ThenTrue() {
+        int max=maxnumber.maxnumber(30,20,30);
+        Assert.assertEquals(30,max);
+    }
 }
