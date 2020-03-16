@@ -35,4 +35,14 @@ public class MaximumProblemUsingGenerics {
         }
         return maxNumber;
     }
+    public <T extends Comparable <T>> T  getMaximumNumber(T firstValue,T secondValue, T thardValue){
+        T maximumResult = firstValue;
+        if(secondValue.compareTo(maximumResult)>0){
+            maximumResult = secondValue;
+        }
+        if(thardValue.compareTo(maximumResult)>0){
+            maximumResult = thardValue;
+        }
+        return maximumResult;
+    }
 }

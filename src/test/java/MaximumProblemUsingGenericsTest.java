@@ -6,67 +6,68 @@ public class MaximumProblemUsingGenericsTest {
     MaximumProblemUsingGenerics maxnumber = new MaximumProblemUsingGenerics();
     @Test
     public void givenThreeNumber_WhenThardMax_ThenTrue() {
-        int max=maxnumber.maxnumber(10,20,30);
-        Assert.assertEquals(30,max);
+        Integer max=  maxnumber.getMaximumNumber(10,20,30);
+        Assert.assertEquals((Integer) 30,max);
     }
     @Test
     public void givenThreeNumber_WhenSecondMaximum_ThenTrue() {
-        int max=maxnumber.maxnumber(10,30,20);
-        Assert.assertEquals(30,max);
+        Integer max=maxnumber.getMaximumNumber(10,30,20);
+        Assert.assertEquals((Integer)30,max);
     }
     @Test
     public void givenThreeNumber_WhenFirstMaximum_ThenTrue() {
-        int max=maxnumber.maxnumber(30,20,30);
-        Assert.assertEquals(30,max);
+        Integer max=maxnumber.getMaximumNumber(30,20,30);
+        Assert.assertEquals((Integer)30,max);
     }
     @Test
     public void givenThreeFloatNumber_WhenThardMax_ThenTrue() {
-        Float max=maxnumber.maxFloatNumber(10.10f,20.20f,30.50f);
+        Float max=maxnumber.getMaximumNumber(10.10f,20.20f,30.50f);
         Assert.assertEquals((Float)30.50f,max);
     }
     @Test
     public void givenThreeFloatNumber_WhenSecondMax_ThenTrue() {
-        Float max=maxnumber.maxFloatNumber(10.10f,30.50f,20.20f);
+        Float max=maxnumber.getMaximumNumber(10.10f,30.50f,20.20f);
         Assert.assertEquals((Float)30.50f,max);
     }
     @Test
     public void givenThreeFloatNumber_WhenFirstMax_ThenTrue() {
-        Float max=maxnumber.maxFloatNumber(30.50f,10.10f,20.20f);
+        Float max=maxnumber.getMaximumNumber(30.50f,10.10f,20.20f);
         Assert.assertEquals((Float)30.50f,max);
     }
     @Test
     public void givenThreeString_WhenThardMax_ThenTrue() {
-        String max=maxnumber.maximumString("abc","pqr","xyz");
+        String max=maxnumber.getMaximumNumber("abc","pqr","xyz");
         Assert.assertEquals("xyz",max);
     }
     @Test
     public void givenThreeString_WhenSecondMax_ThenTrue() {
-        String max=maxnumber.maximumString("abc","xyz","pqr");
+        String max=maxnumber.getMaximumNumber("abc","xyz","pqr");
         Assert.assertEquals("xyz",max);
     }
     @Test
     public void givenThreeString_WhenFirstMax_ThenTrue() {
-        String max=maxnumber.maximumString("xyz","abc","pqr");
+        String max=maxnumber.getMaximumNumber("xyz","abc","pqr");
         Assert.assertEquals("xyz",max);
     }
     @Test
     public void givenThreeStringInCapitalLetter_WhenThardMax_ThenTrue() {
-        String max=maxnumber.maximumString("ABC","PQR","XYZ");
+        String max=maxnumber.getMaximumNumber("ABC","PQR","XYZ");
         Assert.assertEquals("XYZ",max);
     }
     @Test
     public void givenThreeStringInCapitalLetter_WhenSecondMax_ThenTrue() {
-        String max=maxnumber.maximumString("ABC","XYZ","PQR");
+        String max=maxnumber.getMaximumNumber("ABC","XYZ","PQR");
         Assert.assertEquals("XYZ",max);
     }
     @Test
     public void givenThreeStringInCapitalLetter_WhenFirstMax_ThenTrue() {
-        String max=maxnumber.maximumString("XYZ","ABC","PQR");
+        String max=maxnumber.getMaximumNumber("XYZ","ABC","PQR");
         Assert.assertEquals("XYZ",max);
     }
     @Test
     public void givenThreeStringInNumbers_WhenThardMax_ThenTrue() {
-        String max=maxnumber.maximumString("123","456","789");
+        String max=maxnumber.getMaximumNumber("123","456","789");
         Assert.assertEquals("789",max);
     }
 }
+
